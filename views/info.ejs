@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+  
+<h2>User Information</h2>
+
+<table>
+  <tr>
+    <th>Details</th>
+    <th>Info.</th>
+    
+  </tr>
+  <tr>
+    <td>Name</td>
+    <td><%- doc.name %></td>
+    
+  </tr>
+  <tr>
+    <td>username </td>
+    <td><%- doc.username %></td>
+    
+  </tr>
+  <tr>
+    <td>email</td>
+    <td><%- doc.email %></td>
+    
+  </tr>
+  <tr>
+    <td>phone</td>
+    <td><%- doc.phone %></td>
+    
+  </tr>
+  <tr>
+    <td>collegeName</td>
+    <td><%- doc.collegeName %></td>
+    
+  </tr>
+  <tr>
+    <td>gender</td>
+    <td><%- doc.gender %></td>
+    
+  </tr>
+</table>
+<br><br>
+
+<form class="col-3" action="/result" method="post" style="text-align: center;">
+    <button type="submit" class="btn btn-primary">Log in page</button>
+
+</form>
+<form action="/download" method="get">
+  <button >Download data!</button>
+</form>
+
+
+
+</body>
+</html>
+
+
+
+      
+        
